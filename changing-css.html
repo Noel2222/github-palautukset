@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Changing CSS with Event Listeners</h1>
+    <div>
+    <label>Background color</label>
+    <input type="text" class="js-bg-color" style='padding: 30px; font-size: 30px;'>
+    </div>
+    <div>
+        <label>Text color</label>
+        <input type="text" class="js-text-color" style='padding: 30px; font-size: 30px;'>
+    </div>
+
+    
+
+    <script>
+        // pakottaa taustavärin vaihdon
+        var bgColor = document.querySelector(".js-bg-color")
+        var textColor = document.querySelector(".js-text-color")
+        var body = document.querySelector("body")
+
+        bgColor.addEventListener('keyup', function(event) {
+            // lisää eventlister 
+           var color = event.target.value
+           // valitsee sen kohteen
+           switch (color) {
+            // värin vaihto vaihtoehdot esimerkkinä
+            case 'red':
+            case 'white':
+            case 'blue':
+                body.style.backgroundColor = color
+                break
+                // valitsee bakio taustavärin johon se palaa, kun boxiin ei ole syötetty värivaihtoehtoa
+                default:
+                    body.style.backgroundColor = "green"
+                    break
+           }
+
+        });
+
+        textColor.addEventListener('keyup', function(event) {
+            body.style.Color = event.target.value
+
+        });
+
+    </script>
+
+
+</body>
+</html>
