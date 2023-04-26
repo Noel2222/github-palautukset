@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-sivuni</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body>
+   
+    <div class="container">
+        <h2>Lohjan Sneaker Shop</h2>
+
+        <img src="https://th.bing.com/th/id/R.26b6b754149c5af939b7723211283a19?rik=vvAUluE78LrgZQ&pid=ImgRaw&r=0" class="mx-auto d-block" style="width:25%">
+          
+        <p2>Toinen kuva:</p2>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+          
+          </button>
+
+          <div class="container mt-3">
+            <h2>Kenkävalikoimamme</h2>
+            <ul>
+                <li class="js-text">Jordan 1</li>
+                <li class="js-text">Jordan 2</li>
+                <li class="js-text">Jordan 3</li>
+                <li class="js-text">Jordan 4</li>
+                <li class="js-text">Jordan 5</li>
+                <li class="js-text">Jordan 6</li>
+                <li class="js-text">Jordan 7</li>
+                <li class="js-text">Jordan 8</li>
+                <li class="js-text">Jordan 9</li>
+                <li class="js-text">Jordan 10</li>
+                <li class="js-text">Jordan 11</li>
+            </ul>
+    
+        <script>
+    
+            var lis = document.querySelectorAll(".js-text")
+    
+            lis.forEach(function(node, index) {
+                // console.log(node.innerText)
+                if(index >= 10) {
+                    node.remove()
+                    return false
+                }
+            })
+            
+
+</body>
+</html>
