@@ -22,20 +22,20 @@
 
     <script>
         // pakottaa taustavärin vaihdon
-        var bgColor = document.querySelector(".js-bg-color")
-        var textColor = document.querySelector(".js-text-color")
+        var bgColor = document.querySelector(".js-bg-number")
+        var textColor = document.querySelector(".js-text-number")
         var body = document.querySelector("body")
 
         bgColor.addEventListener('keyup', function(event) {
             // lisää eventlister 
-           var color = event.target.value
+           var number = event.target.value
            // valitsee sen kohteen
-           switch (color) {
+           switch (number) {
             // värin vaihto vaihtoehdot esimerkkinä
-            case 'red':
-            case 'white':
-            case 'blue':
-                body.style.backgroundColor = color
+            case 'green = "1"':
+            case '11':
+            case '111':
+                body.style.backgroundColor = number
                 break
                 // valitsee bakio taustavärin johon se palaa, kun boxiin ei ole syötetty värivaihtoehtoa
                 default:
